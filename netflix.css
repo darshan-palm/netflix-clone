@@ -1,0 +1,369 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: #222;
+}
+
+.cover-image-container {
+    background: radial-gradient(60% 65%, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+}
+
+.cover-photo {
+    display: block;
+    width: 100%;
+    height: 733px;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.cover-text-container {
+    width: 100%;
+    height: 733px;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.story-header {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+}
+
+.lang {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.lang-link {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 8px 12px 8px 12px;
+    border-width: 1px;
+    border-color: aliceblue;
+    border-style: solid;
+    font-size: 17px;
+}
+
+.sign-in-btn {
+    background-color: red;
+    border-radius: 5px;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 8px 20px 8px 20px;
+    font-size: 17px;
+}
+
+.punch-line-email {
+    align-self: center;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 200px;
+}
+
+.punch-line {
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.punch-line-sub {
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.punch-line-start {
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.email-box {
+    width: 100%;
+    display: flex;
+    margin: 10px 0px 10px 0px;
+}
+
+.email {
+    width: 100%;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.email-btn {
+    color: aliceblue;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    background-color: rgb(228, 2, 2);
+    padding: 15px 30px 15px 30px;
+    border: 0px;
+}
+
+.email-btn:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+header {
+    margin-bottom: 9px;
+}
+
+section {
+    height: 470px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 10%;
+    box-sizing: border-box;
+    margin-bottom: 9px;
+}
+
+.section-text-container {
+    width: 50%;
+}
+
+.section-heading {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color: aliceblue;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-content {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: 200;
+}
+
+.section-image-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.section-image {
+    width: 80%;
+}
+
+@media screen and (max-width: 1080px) {
+    .cover-photo {
+        height: 700px;
+    }
+
+    .cover-text-container {
+        height: 700px;
+    }
+
+    .logo {
+        width: 170px;
+    }
+
+    .punch-line-email {
+        margin: 0px 180px;
+    }
+
+    .punch-line {
+        font-size: 50px;
+    }
+
+    .punch-line-sub {
+        font-size: 30px;
+    }
+
+    .punch-line-start {
+        font-size: 20px;
+    }
+
+    .email-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .email-btn {
+        font-size: 25px;
+        padding: 10px 20px 10px 20px;
+        margin-top: 20px;
+    }
+
+    section {
+        flex-direction: column;
+        height: 700px;
+    }
+
+    .section-text-container {
+        width: 100%;
+    }
+
+    .section-image-container {
+        width: 100%;
+    }
+
+    .section-content {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .section-heading {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 810px) {
+
+    .cover-photo {
+        height: 650px;
+    }
+
+    .cover-text-container {
+        height: 650px;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    .punch-line-email {
+        margin: 0px 90px;
+    }
+
+    .section-heading {
+        font-size: 40px;
+    }
+
+    .section-content {
+        font-size: 25px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 630px) {
+
+    .cover-photo {
+        height: 630px;
+    }
+
+    .cover-text-container {
+        height: 630px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .punch-line-email {
+        margin: 0px 70px;
+    }
+
+    .punch-line {
+        font-size: 40px;
+    }
+
+    .punch-line-sub {
+        font-size: 25px;
+    }
+
+    .punch-line-start {
+        font-size: 18px;
+    }
+
+    .section-heading {
+        font-size: 35px;
+    }
+
+    .section-content {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:504px) {
+    .logo {
+        width: 110px;
+    }
+
+    .punch-line-email {
+        margin: 0px 50px;
+    }
+
+    .punch-line {
+        font-size: 35px;
+    }
+
+    .punch-line-sub {
+        font-size: 22px;
+    }
+
+    .punch-line-start {
+        font-size: 18px;
+    }
+
+    .section-heading {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .section-content {
+        font-size: 16px;
+    }
+
+    section {
+        height: 430px;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .punch-line-email {
+        margin: 0px 40px;
+    }
+
+    .punch-line {
+        font-size: 32px;
+    }
+
+    section {
+        height: 400px;
+    }
+}
